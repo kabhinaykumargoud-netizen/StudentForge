@@ -381,4 +381,13 @@ input:focus, select:focus, textarea:focus {
         padding: 2rem 1rem !important;
         text-align: center !important;
     }
+
+    .compact-copyright {
+        bottom: 1.5rem !important;
+        font-size: 0.65rem !important;
+        width: 100% !important;
+        text-align: center !important;
+        left: 0 !important;
+        transform: none !important;
+    }
 }

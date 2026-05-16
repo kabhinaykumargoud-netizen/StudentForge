@@ -281,3 +281,43 @@ input:focus, select:focus, textarea:focus {
 .signin-heading-section h1 {
     font-size: 3.5rem !important;
 }
+
+/* Staggered Load Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#view-landing.active .custom-header-nav {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+#view-landing.active .background-text-animation {
+    animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards, driftText 30s ease-in-out infinite;
+}
+
+#view-landing.active .login-cards {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    opacity: 0;
+}
+
+#view-landing.active .intern-card {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s forwards !important;
+    opacity: 0;
+}
+
+#view-landing.active .school-card {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards !important;
+    opacity: 0;
+}
+
+#view-landing.active .footer {
+    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.8s forwards;
+    opacity: 0;
+}
